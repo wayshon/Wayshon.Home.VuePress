@@ -159,7 +159,8 @@ ActiveObject，执行全局和方法时有一个ActiveObject，里面有参数va
 
 `Dec 15, 2016`
 
-待完善...
+Cordova 能够将你的 HTML/JS 代码打包在一个原生的容器中运行，并且可以调用系统的各类软硬件接口（JavaScript API）。我们将这种架构称之为 `hybrid app` , 得益于这种架构，我们能将前端代码跨平台运行，并且得到接近原生应用的系统特性。最终发布到各大应用市场，包括苹果的 App Store。<br />
+Vue.js 是一套构建用户界面的 渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，并且非常容易学习，非常容易与其它库或已有项目整合。另一方面，Vue 完全有能力驱动采用单文件组件和Vue 生态系统支持的库开发的复杂单页应用。基于 Vue 框架，开发单页面的 hybrid app 将会变的非常高效。
 
 [...阅读全文](/2016/Cordova搭配Vue开发混合app实践.html)
 ***
@@ -168,7 +169,8 @@ ActiveObject，执行全局和方法时有一个ActiveObject，里面有参数va
 
 `Nov 25, 2016`
 
-待完善...
+CodePush是一个微软开发的云服务器。通过它，开发者可以直接在用户的设备上部署手机应用更新。CodePush相当于一个中心仓库，开发者可以推送当前的更新（包括JS/HTML/CSS/IMAGE等）到CoduPush，然后应用将会查询是否有更新。<br />
+安装CodePush CLI, 在CodePush服务器上注册app, 在app中添加SDK, 部署APP相关命令
 
 [...阅读全文](/2016/CodePush使用调研.html)
 ***
