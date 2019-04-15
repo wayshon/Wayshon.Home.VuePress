@@ -4,7 +4,10 @@
 
 `Feb 25, 2019`
 
-待完善...
+创建根Controller:RCTRootView<br />
+创建桥接对象:RCTBridge,用来处理js的jsccore，js、c++和OC交互。<br />
+加载JS:[RCTBatchedBridge loadSource]<br />
+创建模块表:[RCTBatchedBridge initModulesWithDispatchGroup],用来告诉js有哪些native模块可被调用
 
 [...阅读全文](/2019/ReactNative是怎么在iOS上跑起来的.html)
 ___
@@ -40,7 +43,8 @@ ___
 
 `Jul 06, 2018`
 
-待完善...
+快排就是找一个基数用来比较, 把比他大的放他前面，比他小的放他后面, 然后把前后两部分重复此方法排序<br />
+归并是将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。所以前提是先细化到数组只有一个值，然后才能比较，返回一个两个值的有序数组，将这个含有两个值的有序数组与其他有序数组排序合并得到更大的有序数组，最终达到给整个数列排序的目的。
 
 [...阅读全文](/2018/JavaScript常见排序.html)
 ***
@@ -49,7 +53,10 @@ ___
 
 `Jul 04, 2018`
 
-待完善...
+script加载js会阻塞渲染，标签中 defer 指异步加载js，在文档load之后按顺序执行。async指异步加载，加载完立即执行，不保证顺序<br />
+`<noscropt>`用来在不支持脚本的浏览器显示内容<br />
+函数没有重载，自己判断 arguments。arguments.callee指向函数自己，递归时用到。arguments.callee.caller指调用函数的函数<br />
+在读取基本类型时，相当于为基本类型创建了对应的基本包装类对象，方便数据操作，如：2.toString()。操作基本类型值的语句一旦完成就立刻销毁创建的包装对象
 
 [...阅读全文](/2018/Review_JavaScript.html)
 ***
