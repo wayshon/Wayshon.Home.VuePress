@@ -5,7 +5,7 @@
 - “Mustache” 语法（双大括号）中的js只能包含单个表达式，双大括号会将数据解释为纯文本，而非 HTML 。为了输出真正的 HTML ，你需要使用 `v-html` 指令。通过使用 v-once 指令，你也能执行一次性地插值，当数据改变时，插值处的内容不会更新。
 - Vue 2.x 中，过滤器只能在 mustache 绑定和 `v-bind` 表达式（从 2.1.0 开始支持）中使用，因为过滤器设计目的就是用于文本转换。为了在其他指令中实现更复杂的数据变换，你应该使用计算属性。过滤器还可以串联。过滤器是 JavaScript 函数，因此可以接受参数。
 - 计算属性：
-  - 我们可以通过调用表达式中的method来达到同样的效果：`{{ reverseMessage() }}`，计算属性是基于它的依赖缓存，computed: {now: function () {return Date.now()}}Date.now() 不是响应式依赖。相比而言，每当重新渲染的时候，method 调用总会执行函数。如果你不希望有缓存，请用 method 替代。
+  - 我们可以通过调用表达式中的method来达到同样的效果：`{{` reverseMessage() `}}`，计算属性是基于它的依赖缓存，computed: {now: function () {return Date.now()}}Date.now() 不是响应式依赖。相比而言，每当重新渲染的时候，method 调用总会执行函数。如果你不希望有缓存，请用 method 替代。
   - 计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter 。
   - 虽然计算属性在大多数情况下更合适，但有时也需要一个自定义的 watcher 。这是为什么 Vue 提供一个更通用的方法通过 watch 选项，来响应数据的变化。当你想要在数据变化响应时，执行异步操作或开销较大的操作，这是很有用的。
 - class与style绑定:
@@ -93,7 +93,7 @@
 - vm.$off( [event, callback] )：移除事件监听器。
 - vm.$forceUpdate()：迫使Vue实例重新渲染。注意它仅仅影响实例本身和插入插槽内容的子组件，而不是所有子组件。
 - vm.$destroy()：完全销毁一个实例。清理它与其它实例的连接，解绑它的全部指令及事件监听器。 触发 beforeDestroy 和 destroyed 的钩子。
-- v-text 相当于 `{{ text }}`
+- v-text 相当于 `{{` text `}}`
 - v-pre：跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。
 - v-cloak：这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 `[v-cloak] { display: none }` 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。
 - keep-alive：include：包含需要被缓存的组件名，如果为空字符串就缓存所有exclude：包含不需要被缓存的组件名，如果为空字符串就缓存所有
