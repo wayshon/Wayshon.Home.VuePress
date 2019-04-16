@@ -37,16 +37,17 @@ CDN Combo，可以将多个文件打包成一个文件的形式返回<br />
 [...阅读全文](/2018/virtual-dom-learning.html)
 ***
 
-### 样式小记
+### 网络请求相关
 
 `Sep 10, 2018`
 
-正常流宽度：除非有明显的width设置，否则div流的宽度不会超过父级容器。格式化宽度：出现在绝对定位，是包裹性，除非是left,right同时出现就是计算的格式化宽度<br />
-width是作用在content-box上的<br />
-margin只在width为auto时可以改变元素尺寸，利用这个特性可以两端宽度固定并float，中间元素两端固定就可以自适应了<br />
-width父级auto子元素100%也是ok，height不行(除非绝对定位)，除非父元素的height有可以生效的值
+http 请求的具体步奏<br />
+http 与 https<br />
+http1.x 与 http2<br />
+常见 http 状态码<br />
+常见 restful 方法
 
-[...阅读全文](/2018/样式小记.html)
+[...阅读全文](/2018/网络请求相关.html)
 ***
 
 ### JavaScript常见排序
@@ -71,13 +72,16 @@ script加载js会阻塞渲染，标签中 defer 指异步加载js，在文档loa
 [...阅读全文](/2018/Review_JavaScript.html)
 ***
 
-### https建立过程
+### 样式小记
 
-`Mar 11, 2018`
+`Mar 11, 2018Sep 10, 201`
 
-待完善...
+正常流宽度：除非有明显的width设置，否则div流的宽度不会超过父级容器。格式化宽度：出现在绝对定位，是包裹性，除非是left,right同时出现就是计算的格式化宽度<br />
+width是作用在content-box上的<br />
+margin只在width为auto时可以改变元素尺寸，利用这个特性可以两端宽度固定并float，中间元素两端固定就可以自适应了<br />
+width父级auto子元素100%也是ok，height不行(除非绝对定位)，除非父元素的height有可以生效的值
 
-[...阅读全文](/2018/https建立过程.html)
+[...阅读全文](/2018/样式小记.html)
 ***
 
 ### 判断浏览器终端

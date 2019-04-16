@@ -8,10 +8,10 @@
 ## 2018
 
 - `Dec 12, 2018` <img width="30"/>  [virtual-dom learning](/2018/virtual-dom-learning.html)
-- `Sep 10, 2018` <img width="30"/>  [样式小记](/2018/样式小记.html)
+- `Sep 10, 2018` <img width="30"/>  [网络请求相关](/2018/网络请求相关.html)
 - `Jul 06, 2018` <img width="30"/>  [JavaScript常见排序](/2018/JavaScript常见排序.html)
 - `Jul 04, 2018` <img width="30"/>  [Review JavaScript](/2018/Review_JavaScript.html)
-- `Mar 11, 2018` <img width="30"/>  [https建立过程](/2018/https建立过程.html)
+- `Mar 11, 2018` <img width="30"/>  [样式小记](/2018/样式小记.html)
 
 ## 2017
 
