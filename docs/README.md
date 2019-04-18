@@ -4,7 +4,10 @@
 
 `Apr 18, 2019`
 
-....
+app 用safari打开html<br />
+html 配置meta<br />
+保存网页到桌面<br />
+打开桌面标签唤起app，避免系统确认弹窗
 
 [...阅读全文](/2019/ios-app内页面添加到桌面.html)
 ___
