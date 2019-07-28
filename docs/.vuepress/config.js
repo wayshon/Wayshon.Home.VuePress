@@ -15,7 +15,7 @@ module.exports = {
                 { text: '关心宝', link: 'https://itunes.apple.com/cn/app/id1447258000' },
                 { text: 'qr code', link: 'https://imgqr.cn/' },
                 { text: 'base64', link: 'http://base64.imgqr.cn/' },
-                { text: 'nes', link: 'https://calcbit.com/nes/' }
+                { text: '垃圾分类', link: 'https://calcbit.com/garbage-web/' }
               ] 
             }
 		],

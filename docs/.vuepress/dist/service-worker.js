@@ -21,111 +21,111 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "2016/CodePush使用调研.html",
-    "revision": "ce6f668a44826334a7424566014095f3"
+    "revision": "a51456fafa226df95ff34faf0adabb14"
   },
   {
     "url": "2016/Cordova搭配Vue开发混合app实践.html",
-    "revision": "4edf2eb50b8bf12172cbd2c61f9d3690"
+    "revision": "c54071e5c1e1c6ac56904ed73fc83506"
   },
   {
     "url": "2016/ES6学习笔记.html",
-    "revision": "c7d47bfaf4e3210ea72888d42f7ce500"
+    "revision": "366cf652e4c9290abde8e71a8e86221e"
   },
   {
     "url": "2016/iOS-sqlite3外键级联删除问题解决.html",
-    "revision": "ed8469c4751ba3cdbe743493abda77cb"
+    "revision": "39c259746ca7c5886cbdb515cd4cef91"
   },
   {
     "url": "2016/iOS自带的宏.html",
-    "revision": "b092fd41bc81d865f662cf6c52da314f"
+    "revision": "631a7c85a996ee547d8cf7ed65ebabd3"
   },
   {
     "url": "2016/iOS获取当前屏幕的视图控制器.html",
-    "revision": "5960ff7bc0c331b6830a33bb428f4421"
+    "revision": "2fc7d3c559e0331f5fe6ce1aacf0e5d2"
   },
   {
     "url": "2016/使用FMDB事务批量存入数据.html",
-    "revision": "3e777431275ab4d28d30ac6cf09b217c"
+    "revision": "36c8443d4a8918d84610bceaf6e317db"
   },
   {
     "url": "2016/栈,堆,全局区,常量区,代码区的区别.html",
-    "revision": "4e308ee685c856a6610d0cfc2b19bdab"
+    "revision": "d8c9b475eb7f6110611f7e0c03ad62d2"
   },
   {
     "url": "2017/git使用笔记.html",
-    "revision": "7a55518400c9a42b3fb2a88c5d847e16"
+    "revision": "a41b8600c983125992b37dd06f6ddb84"
   },
   {
     "url": "2017/js_addEventListener&removeEventListener.html",
-    "revision": "338ebee68d56e0667ad0af0e783f6ebb"
+    "revision": "a48c9fba7d69c336f9650da62a58f214"
   },
   {
     "url": "2017/js_event-loop.html",
-    "revision": "8850df3d0c8ae5ae8dc57996b225a750"
+    "revision": "b99f7f34d092f09b8924a20b130b8fa2"
   },
   {
     "url": "2017/再学vue.html",
-    "revision": "c90c0dbde9690855b9425e079af22048"
+    "revision": "1de46e18c3a186c5693f659fe3eb7376"
   },
   {
     "url": "2017/判断浏览器终端.html",
-    "revision": "62dc728ef41e355a4e51a74fc2ad4ecd"
+    "revision": "0b521a78b14efb0ed29256a430c67a10"
   },
   {
     "url": "2017/正则小记.html",
-    "revision": "0415d73e8288cd6e48f8414893a91fda"
+    "revision": "25385fec81c88629b1e97e47f1ca52ea"
   },
   {
     "url": "2017/浏览器渲染流程.html",
-    "revision": "306d4843f453f2bb88ccbd949ab1f24b"
+    "revision": "a0f32843983724781078d708d852545e"
   },
   {
     "url": "2017/蝴蝶书学习笔记.html",
-    "revision": "f879e4cc700592f25fe7bb11d7df37b6"
+    "revision": "f683a5f950dc2ae1a4e53de921f6d880"
   },
   {
     "url": "2018/JavaScript常见排序.html",
-    "revision": "b61f672cd5d289103d1fd58b89ef9a87"
+    "revision": "30d516d2088512f6eb903f856f79b323"
   },
   {
     "url": "2018/Review_JavaScript.html",
-    "revision": "fc8dc4ef5839787bfe39eede9b3ae247"
+    "revision": "10ecf540fca372edbb2cba694c43427d"
   },
   {
     "url": "2018/virtual-dom-learning.html",
-    "revision": "8bce651ca4619f73db73b693d98bf88a"
+    "revision": "82aa89aff4190a68dffefb9931ed02f5"
   },
   {
     "url": "2018/样式小记.html",
-    "revision": "530bb99bc7bd6d64eb3003dfd379e62e"
+    "revision": "e09ca2c3e3d540f5f233ca69fa72aff5"
   },
   {
     "url": "2018/网络请求相关.html",
-    "revision": "47f0763bcc8fca8eb7e9488233b101d9"
+    "revision": "4b0c8472d1af904aab9feea9ba841cb1"
   },
   {
     "url": "2019/ios-app内页面添加到桌面.html",
-    "revision": "14723ebaf317ff48c772311ae29160e0"
+    "revision": "b04c71d5b4a728cbceb7aeca4706968f"
   },
   {
     "url": "2019/ReactNative是怎么在iOS上跑起来的.html",
-    "revision": "bce0f8445adda8535b50c8e9cdc0fa6d"
+    "revision": "453293738ebc2dc989c1e04c912b9e58"
   },
   {
     "url": "2019/前端页面优化常见方法.html",
-    "revision": "e6c16d3b8529d475737a918b340942b3"
+    "revision": "952bc89e64a2e42ef9fb95a8abf0caeb"
   },
   {
     "url": "404.html",
-    "revision": "469fb67465031e90f762e7a94b0762ca"
+    "revision": "fb1eddfe53abf7c5ff930b4ba6b17d7e"
   },
   {
     "url": "about.html",
-    "revision": "b5b7a36bf8cb2d1f660857802a18220b"
+    "revision": "adbca2da10bc9b99967300472ead5f17"
   },
   {
     "url": "archives.html",
-    "revision": "01a0d09899ff393c6832ff69fda73be4"
+    "revision": "a0a426013a3a7b654f3d403eda3dcc5d"
   },
   {
     "url": "assets/css/0.styles.f9ac1508.css",
@@ -252,8 +252,8 @@ self.__precacheManifest = [
     "revision": "2b543a9ac6fbb39e47fea88e7d9403fd"
   },
   {
-    "url": "assets/js/28.f4538f6a.js",
-    "revision": "0a72c0ffd5878ed9abc25699b5a78b56"
+    "url": "assets/js/28.403471f2.js",
+    "revision": "15ef3d7fd5c6309791db6a20b9254de6"
   },
   {
     "url": "assets/js/29.ce88f1b8.js",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "revision": "3e78cf00e42aa32adbda236537e01a39"
   },
   {
-    "url": "assets/js/app.45b60805.js",
-    "revision": "b2187857722e182a7a57c43da825419b"
+    "url": "assets/js/app.25b5ce54.js",
+    "revision": "b22caaf95a260279e3047f8149b7cfb2"
   },
   {
     "url": "index.html",
-    "revision": "248d1a5f71186f7cc3d82c7dbf0d0840"
+    "revision": "a981e05b4981e1796fc968b137dc5092"
   },
   {
     "url": "me.png",

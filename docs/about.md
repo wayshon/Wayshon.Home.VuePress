@@ -14,7 +14,7 @@
 	- vue / react
 	- React-Native / Cordova / Hybrid
 	- nodejs / express / koa2
-	- 微信小程序
+	- 微信/支付宝小程序
 - **iOS**
 	- 熟悉 Objective-C 基础，熟悉常用类库，具有独立开发经验
 	- 熟悉常用设计模式,oo/mvc/kvo/block/代理/GCD多线程
@@ -27,13 +27,20 @@
 
 ## 项目经验
 
-#### **携程旅游网络技术(上海)有限公司(2017.10 ~ 至今)**
+#### **哈啰出行(2019.4 ~ 至今)**
+
+- **支付宝小程序**:
+	- 顺风车业务开发
+	- 小程序组件开发与维护
+
+#### **携程旅游网络技术(上海)有限公司(2017.10 ~ 2019.4)**
 
 - **微信小程序**:
 	- 业务分析，文档输出，资源协调，项目跟进
 	- 小程序业务开发，地图可视化开发，模块组件化
 	- 小程序插件化
 - **国内包车**: `react nodejs Hybrid`
+	- 基础代码库建设，分支管理，code review
 	- 基于react技术栈重构携程包车项目
 	- nodejs 输出页面，打入初始变量，聚合api
 	- 分离业务逻辑层，封装开发框架
@@ -83,9 +90,8 @@
 	- 使用GCD与线程锁机制封装UDP/蓝牙通讯模块
 
 ## 其他
+- 垃圾分类小程序(支付宝,微信,头条,美团)，单日10万uv，60万pv。获支付宝官微推荐,美团小程序首发邀请,招行h5邀请,以及China Daily刊登。基于 Aliyun EC 搭建server端服务，docker容器化开发。mongodb + redis 进行数据存储，以及对上海官方的数据爬虫，积累4000+垃圾分类数据。
 - 基于objective-c + react-native 开发混合app`关心宝`，实现后台定位以及地图数据可视化，AppStore地址: [https://itunes.apple.com/cn/app/id1447258000](https://itunes.apple.com/cn/app/id1447258000)
-- 基于 Aliyun EC 搭建server端服务，docker容器化开发
-- koa2 + mysql实现api，提供了restful和graphql接口。vue编写前端页面。
 - 接口设计遵循微服务设计理念，使用nginx实现反向代理和负载均衡。
 - paw, charles, fiddler等调试工具的使用。
 
