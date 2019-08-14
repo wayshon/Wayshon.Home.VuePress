@@ -10,7 +10,7 @@ module.exports = {
 			{ text: '归档', link: '/archives' },
 			{ text: '关于我', link: '/about' },
 			{ text: 'Github', link: 'https://www.github.com/wayshon' },
-			{ text: 'idea project',
+			{ text: 'side project',
               items: [
                 { text: '关心宝', link: 'https://itunes.apple.com/cn/app/id1447258000' },
                 { text: 'qr code', link: 'https://imgqr.cn/' },
