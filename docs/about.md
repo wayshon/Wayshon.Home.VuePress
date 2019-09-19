@@ -5,30 +5,33 @@
  - Github: https://github.com/wayshon 
  - Blog: https://wayshon.com
  - 手机: 15716199911
- - Email: wayshon@foxmail.com
+ - Email: wayshon@qq.com
 
 ## 技能清单
 
 - **JavaScript**
 	- ES5 / ES6 / ES7
 	- vue / react
-	- React-Native / Cordova / Hybrid
+	- React-Native / Hybrid / Cordova
 	- nodejs / express / koa2
-	- 微信/支付宝小程序
+	- 微信/支付宝/头条小程序
 - **iOS**
 	- 熟悉 Objective-C 基础，熟悉常用类库，具有独立开发经验
 	- 熟悉常用设计模式,oo/mvc/kvo/block/代理/GCD多线程
 	- 具备 Hybrid / React-Native 与 Native 整合开发经验
-- **网络**: 熟悉socket通信，mqtt协议，http / https
+- **网络**: 熟悉socket通信，mqtt协议，http / https，grpc
 - **其他**: 
-	- webpack / nginx / git
+	- webpack / gulp / nginx / git
 	- 常用sql语句，mysql / sqlite 使用及优化
-	- 熟悉mongodb及redis使用
+	- mongodb,redis
 
-## 项目经验
+## 工作经验
 
 #### **哈啰出行(2019.4 ~ 至今)**
 
+- **nodejs 聚合层**:
+	- 搭建node开发环境，将node服务作为独立的面向C端的微服务
+	- 处理C端请求，通过grpc调用其他微服务，实现数据的聚合与筛选
 - **支付宝小程序**:
 	- 顺风车业务开发
 	- 小程序组件开发与维护
@@ -40,7 +43,7 @@
 	- 小程序业务开发，地图可视化开发，模块组件化
 	- 小程序插件化
 - **国内包车**: `react nodejs Hybrid`
-	- 基础代码库建设，分支管理，code review
+	- 团队管理，代码库建设，分支管理，code review
 	- 基于react技术栈重构携程包车项目
 	- nodejs 输出页面，打入初始变量，聚合api
 	- 分离业务逻辑层，封装开发框架
@@ -89,12 +92,20 @@
 	- 通过sqlite实现数据本地化与数据处理
 	- 使用GCD与线程锁机制封装UDP/蓝牙通讯模块
 
-## 其他
-- 垃圾分类小程序(支付宝,微信,头条,美团)，单日10万uv，60万pv。获支付宝官微推荐,美团小程序首发邀请,招行h5邀请,以及China Daily刊登。基于 Aliyun EC 搭建server端服务，docker容器化开发。mongodb + redis 进行数据存储，以及对上海官方的数据爬虫，积累4000+垃圾分类数据。
-- 基于objective-c + react-native 开发混合app`关心宝`，实现后台定位以及地图数据可视化，AppStore地址: [https://itunes.apple.com/cn/app/id1447258000](https://itunes.apple.com/cn/app/id1447258000)
-- 接口设计遵循微服务设计理念，使用nginx实现反向代理和负载均衡。
-- paw, charles, fiddler等调试工具的使用。
+## Side Project
+#### **垃圾分类向导小程序(支付宝,微信,头条,美团)**
+- 单日峰值10万uv，60万pv。
+- 获支付宝官方微博推荐,美团小程序首发,招行h5邀请,以及China Daily刊登。
+- 基于 Aliyun EC 搭建server端服务，docker容器化开发，Nginx 均衡负载
+- mongodb + redis 进行数据存储
+- 积累4000+垃圾分类数据，全部来自于对上海官方的数据爬虫。
 
+#### **关心宝(iOS)**
+- 基于objective-c + react-native 开发混合app`关心宝`
+- 实现客户端实时定位以及上传位置信息，包括app长时间处于后台运行时自动上报地理信息
+- 历史地理数据的地图可视化
+- 用户关系，以及广播push位置信息等功能
+- AppStore地址: [https://itunes.apple.com/cn/app/id1447258000](https://itunes.apple.com/cn/app/id1447258000)
 
 ## 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
