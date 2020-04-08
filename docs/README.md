@@ -1,5 +1,16 @@
 # Wayshon 专注前端领域开发
 
+### review-2019
+
+`Nov 12, 2019`
+
+浏览器渲染流程, v8引擎, 函数的this, shadow-dom<br />
+性能优化, 浏览器与http缓存, Event Loop<br />
+vue, react
+
+[...阅读全文](https://github.com/wayshon/review-2019)
+___
+
 ### 面试-扑克牌问题
 
 `Aug 13, 2019`
