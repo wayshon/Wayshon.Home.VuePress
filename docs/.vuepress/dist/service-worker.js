@@ -21,127 +21,127 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "2016/CodePush使用调研.html",
-    "revision": "b121a1ceba518d63e161e5bfab39b6b0"
+    "revision": "75684d9039c68789dfd6f84ee33bc092"
   },
   {
     "url": "2016/Cordova搭配Vue开发混合app实践.html",
-    "revision": "70bfe8fab4c6145d466da0d1b8d40f2c"
+    "revision": "66337d6cb61143f8aa10ca025f245f9f"
   },
   {
     "url": "2016/ES6学习笔记.html",
-    "revision": "ed5e184094c970e9b96b8eed40502f37"
+    "revision": "69dbbf0728e3bba1bf9e653ab866e8a3"
   },
   {
     "url": "2016/iOS-sqlite3外键级联删除问题解决.html",
-    "revision": "324a998c4273dfc7b5dfd502db0ab14f"
+    "revision": "3fbdaf214289510c830a172685614ae2"
   },
   {
     "url": "2016/iOS自带的宏.html",
-    "revision": "478eaa4e0a98e8e7f4ad4b2a68427fee"
+    "revision": "20149a6474542489db5261f1d4ab4853"
   },
   {
     "url": "2016/iOS获取当前屏幕的视图控制器.html",
-    "revision": "e9f9c28d1556d81eed1f8d607712d1b1"
+    "revision": "d4069fb27c19e92be1562908f4099eda"
   },
   {
     "url": "2016/使用FMDB事务批量存入数据.html",
-    "revision": "2ae7b33161651f7bae5ca9f160088421"
+    "revision": "9a8787576d6347698eac83cef4375efd"
   },
   {
     "url": "2016/栈,堆,全局区,常量区,代码区的区别.html",
-    "revision": "80e385a5f2aef964ac8fa3c3f7f9238b"
+    "revision": "40e63d0ea44f06b25407e5f50590cb98"
   },
   {
     "url": "2017/git使用笔记.html",
-    "revision": "724019fdd80202dd67538e5ddf8726ef"
+    "revision": "ea05715260f3576f0ecf4142e87ce82d"
   },
   {
     "url": "2017/js_addEventListener&removeEventListener.html",
-    "revision": "20d01cdcecdeecfe72b9a976c710da3c"
+    "revision": "9325ddaadf0de9b557b2a170dac5a102"
   },
   {
     "url": "2017/js_event-loop.html",
-    "revision": "1674bf3a4bf6139238983ccfb90bc86d"
+    "revision": "985e71df00cd10db8098731ac760e83a"
   },
   {
     "url": "2017/再学vue.html",
-    "revision": "ed8b6233ade9a5aa648a305cee814436"
+    "revision": "357a39ded6576d5693f7381578f4fe0f"
   },
   {
     "url": "2017/判断浏览器终端.html",
-    "revision": "a17bd5301762517034cedf206ed3c3bb"
+    "revision": "23079a003a55fb5f914fc513886aeaa9"
   },
   {
     "url": "2017/正则小记.html",
-    "revision": "87a567cb0ed98afb03bef8f325a31a11"
+    "revision": "f931850081774d3ae5efd867b1230a51"
   },
   {
     "url": "2017/浏览器渲染流程.html",
-    "revision": "a3a3f86b0801497c289ba0bcad0a9993"
+    "revision": "4234c95ac284933dbaaf71b55d832138"
   },
   {
     "url": "2017/蝴蝶书学习笔记.html",
-    "revision": "445240e71c00c2560060ffbadf38c668"
+    "revision": "0d260584f304c874ddf4f89f0d60b852"
   },
   {
     "url": "2018/JavaScript常见排序.html",
-    "revision": "7732f1f9f8c4d58799f3c36953f3c72c"
+    "revision": "6db2c5e992097d20687b11fde549d59d"
   },
   {
     "url": "2018/Review_JavaScript.html",
-    "revision": "ff54a9db8639fae15ec6bf4727343844"
+    "revision": "63c7630036fde84d893e33ff2c37e328"
   },
   {
     "url": "2018/virtual-dom-learning.html",
-    "revision": "e188bd067c358953b34921ba3e4d3937"
+    "revision": "0ecf376a86204b55e1c449e1d13c2737"
   },
   {
     "url": "2018/样式小记.html",
-    "revision": "6ec994305ab51ede559cde301fbb0ea0"
+    "revision": "f40db8087fe89e503b08529ca6370fd5"
   },
   {
     "url": "2018/网络请求相关.html",
-    "revision": "9b47bb0bf7a8f872dad5c3d0803ec1ca"
+    "revision": "8643cac87904d101067cd5cda40bd176"
   },
   {
     "url": "2019/ios-app内页面添加到桌面.html",
-    "revision": "ce381d42608e116cff4bdcb235ec7544"
+    "revision": "e2a00135a8e1e8439121a336e88edcb6"
   },
   {
     "url": "2019/ReactNative是怎么在iOS上跑起来的.html",
-    "revision": "100958a882db86bdcd8f0d1e6e537ed0"
+    "revision": "86ac90c047ded608885199227d3059af"
   },
   {
     "url": "2019/前端页面优化常见方法.html",
-    "revision": "86475a3c7a7c4bc921fc22f1a3352833"
+    "revision": "78c10d2ab4c0083197b22765a47519ae"
   },
   {
     "url": "2019/面试-扑克牌问题.html",
-    "revision": "fa18828c3772ed0b6a537951a7676b80"
+    "revision": "f6a0e02425361d762b9714b2e6f8ae9a"
   },
   {
     "url": "2020/flutter模仿网易云音乐.html",
-    "revision": "19ece8ac44204b48f1b468bee79ec2e6"
+    "revision": "2c70e06903d628ca1c58b6667e3b90cf"
   },
   {
     "url": "2020/常见的跨端方案.html",
-    "revision": "8f88f5dc81d7744bc8c31346747baddc"
+    "revision": "6f9a86ea2485a55e9aa681f660a49ff0"
   },
   {
     "url": "2020/怎么开发一个flutter-ios插件.html",
-    "revision": "7be1a5b9423b2a39e607b1f67cc0730c"
+    "revision": "139b72bb7626d5917a875b7f996e262e"
   },
   {
     "url": "404.html",
-    "revision": "a0924d02558bcccc972a3857e6230074"
+    "revision": "a19569dc8eb36f6ad31d9edc15cd372e"
   },
   {
     "url": "about.html",
-    "revision": "f9c5015352d723a65942ae1bb92b36c5"
+    "revision": "4ab8108b04d88d49a503d7dcf6cc023e"
   },
   {
     "url": "archives.html",
-    "revision": "a6d06b6c6532182eb3cb97bcb2420eb9"
+    "revision": "7efa2feeff7b870f1391be5a1ba65a14"
   },
   {
     "url": "assets/css/0.styles.f9ac1508.css",
@@ -384,8 +384,8 @@ self.__precacheManifest = [
     "revision": "7e641aa02dc3a8c66d91ee543d2b25a8"
   },
   {
-    "url": "assets/js/31.03125ec6.js",
-    "revision": "f54f146d713594502b86fc5b73eaa3b0"
+    "url": "assets/js/31.46c47801.js",
+    "revision": "ec8249e68f6ad324dffc2092e77f1468"
   },
   {
     "url": "assets/js/32.b9e46907.js",
@@ -424,12 +424,12 @@ self.__precacheManifest = [
     "revision": "a04082703321618538d31f3717ff2082"
   },
   {
-    "url": "assets/js/app.6d979d9b.js",
-    "revision": "a33a9eb7aa8d6ab41248a14264f59617"
+    "url": "assets/js/app.f3e48b1d.js",
+    "revision": "ba6268a84f976287eb68a650eeadb26f"
   },
   {
     "url": "index.html",
-    "revision": "132074033dfc45ba57c172869b9fe65d"
+    "revision": "c68a2587018ed5b4d176737bec9ba7e4"
   },
   {
     "url": "me.png",
