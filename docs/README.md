@@ -1,12 +1,22 @@
 # Wayshon 专注前端领域开发
 
+### 基于Flutter的Hybrid Webview容器实践
+
+`Sep 21, 2020`
+
+在 Flutter 中渲染 WebView <br />
+通过 UIKitView 将 Native 组件嵌入到 Flutter的组件树 <br />
+Flutter - Ntive - WebView 通信
+
+[...阅读全文](/2020/基于Flutter的HybridWebview容器实践.html)
+___
+
 ### flutter 模仿网易云音乐
 
 `Jul 31, 2020`
 
 使用 flutter 开发类似网易云音乐 <br />
 audioplayers, 动画，歌词，网络，单例 <br />
-开发中...
 
 [...阅读全文](/2020/flutter模仿网易云音乐.html)
 ___
