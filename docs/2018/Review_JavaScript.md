@@ -5,6 +5,7 @@
 
 #### **综合**
 - script加载js会阻塞渲染，标签中 defer 指异步加载js，在文档load之后按顺序执行。async指异步加载，加载完立即执行，不保证顺序
+  - 注意 defer 只是外链起作用，即 src 引进来的起作用，直接编写的代码无效
 - `<noscropt>`用来在不支持脚本的浏览器显示内容 
 - js 选中文字：
 	- 1、document.createRange()
