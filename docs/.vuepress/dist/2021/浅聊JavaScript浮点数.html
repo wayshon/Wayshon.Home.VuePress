@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>浅聊 JavaScript 浮点数 | Wayshon 小站</title>
+    <meta name="description" content="Wayshon Front-End Developer">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="preload" href="/assets/css/0.styles.f9ac1508.css" as="style"><link rel="preload" href="/assets/js/app.fa433599.js" as="script"><link rel="preload" href="/assets/js/8.ebaa3a6a.js" as="script"><link rel="prefetch" href="/assets/js/10.be2e6ab5.js"><link rel="prefetch" href="/assets/js/11.d9f51652.js"><link rel="prefetch" href="/assets/js/12.7216bc82.js"><link rel="prefetch" href="/assets/js/13.a2a3d96c.js"><link rel="prefetch" href="/assets/js/14.7948a5fa.js"><link rel="prefetch" href="/assets/js/15.d707752e.js"><link rel="prefetch" href="/assets/js/16.240ef677.js"><link rel="prefetch" href="/assets/js/17.bde028d0.js"><link rel="prefetch" href="/assets/js/18.8eba37ba.js"><link rel="prefetch" href="/assets/js/19.36b82dc1.js"><link rel="prefetch" href="/assets/js/2.fbb50f75.js"><link rel="prefetch" href="/assets/js/20.ca5658e3.js"><link rel="prefetch" href="/assets/js/21.ddfc4c5d.js"><link rel="prefetch" href="/assets/js/22.01e89e94.js"><link rel="prefetch" href="/assets/js/23.3ed78d34.js"><link rel="prefetch" href="/assets/js/24.fd920207.js"><link rel="prefetch" href="/assets/js/25.c9bc6d8b.js"><link rel="prefetch" href="/assets/js/26.e7a4711a.js"><link rel="prefetch" href="/assets/js/27.8a277cc9.js"><link rel="prefetch" href="/assets/js/28.00a84ea3.js"><link rel="prefetch" href="/assets/js/29.4df98ca9.js"><link rel="prefetch" href="/assets/js/3.fea34e09.js"><link rel="prefetch" href="/assets/js/30.2c5e7684.js"><link rel="prefetch" href="/assets/js/31.7181a5a2.js"><link rel="prefetch" href="/assets/js/32.9e4b6909.js"><link rel="prefetch" href="/assets/js/33.6d4fba3d.js"><link rel="prefetch" href="/assets/js/34.7ecbc875.js"><link rel="prefetch" href="/assets/js/35.d57f404b.js"><link rel="prefetch" href="/assets/js/36.618caf8c.js"><link rel="prefetch" href="/assets/js/37.e9f93010.js"><link rel="prefetch" href="/assets/js/38.a3370085.js"><link rel="prefetch" href="/assets/js/4.439ef9b3.js"><link rel="prefetch" href="/assets/js/5.3e055ced.js"><link rel="prefetch" href="/assets/js/6.be44f2e9.js"><link rel="prefetch" href="/assets/js/7.eb56102e.js"><link rel="prefetch" href="/assets/js/9.d89c1bc5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f9ac1508.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wayshon 小站</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/archives.html" class="nav-link">归档</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="https://www.github.com/wayshon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">side project</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://itunes.apple.com/cn/app/id1447258000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关心宝
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qr code
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://base64.imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  base64
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://calcbit.com/garbage-web/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  垃圾分类
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/archives.html" class="nav-link">归档</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="https://www.github.com/wayshon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">side project</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://itunes.apple.com/cn/app/id1447258000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关心宝
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qr code
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://base64.imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  base64
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://calcbit.com/garbage-web/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  垃圾分类
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h2 id="浅聊-javascript-浮点数"><a href="#浅聊-javascript-浮点数" aria-hidden="true" class="header-anchor">#</a> 浅聊 JavaScript 浮点数</h2> <h3 id="背景"><a href="#背景" aria-hidden="true" class="header-anchor">#</a> 背景</h3> <p>在实际开发中，有一个场景 api 返回了毫秒 128639，浏览器侧需要以秒为单位展示，除以1000得到 128.639，最后提交的时候又将秒乘以1000以毫秒为单位提交。然后 128.639 * 1000 = 128639.00000000001，导致类型报错</p> <h3 id="经典问题"><a href="#经典问题" aria-hidden="true" class="header-anchor">#</a> 经典问题</h3> <p>为什么 0.1 + 0.1 = 0.2 但是 0.1 + 0.2 = 0.30000000000000004 呢?</p> <p><a href="http://0.30000000000000004.com" target="_blank" rel="noopener noreferrer">0.30000000000000004.com<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 展示了各个语言对 0.1 + 0.2 的表现，可以看到很多语言计算的结果都是0.30000000000000004</p> <p>我们知道计算机只认识0和1（为什么只能是0和1可以单独看看数电），所有的数据需要通过计算机存储、计算或者展示，都需要转换2进制。回顾一下计算机是怎么存储二进制的<a href="https://tech.bytedance.net/articles/6972202414157856775" target="_blank" rel="noopener noreferrer">补码-计算机存储数据的方式<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>所以针对上面的问题，我们得先知道怎么将十进制转换为二进制：</p> <ul><li>整数：除2取余，由下往上取结果</li> <li>小数：乘2取整，由上往下取结果</li></ul> <p>比如：</p> <p>10 转为二进制为：</p> <p>1.10 / 2 = 5 余 0</p> <p>2.5 / 2 = 2 余 1</p> <p>3.2 / 2 = 1 余 0</p> <p>4.1 / 2 = 0 余 1</p> <p>结果：1010</p> <p>0.1 转二进制为：</p> <p>1.0.1 * 2 = 0.2 整 0</p> <p>2.0.2 * 2 = 0.4 整 0</p> <p>3.0.4 * 2 = 0.8 整 0</p> <p>4.0.8 * 2 = 1.6 整 1</p> <p>5.0.6 * 2 = 1.2 整 1</p> <p>6.0.2 * 2 = 0.4 整 0</p> <p><strong>从0.2开始循环</strong></p> <p>结果为：0.00011001100110011001100110011001100110011001100110011001...</p> <p><strong>由此可见，0.1没办法转换成一个确定的二进制数</strong></p> <p>同理0.2转为二进制为：0.00110011001100110011001100110011001100110011001100110011...</p> <p>0.1 + 0.2 的二进制数为：0.010011001100110011001100110011001100110011001100110011...</p> <p><strong>所以0.1 + 0.2在二进制里实际上是无限循环小数</strong></p> <p>为了解决部分小数无法使用二进制精确表示的问题，于是就有了IEEE 754规范（浮点数算术标准）。IEEE 754规定了四种表示浮点数值的方式：单精确度（32位）、双精确度（64位）、延伸单精确度（43比特以上，很少使用）与延伸双精确度（79比特以上，通常以80位实现）。</p> <p>其中最常用的就是32位单精度浮点数(float)和64位双精度浮点数(double)。</p> <p><strong>js 使用 64 位固定长度来表示，也就是标准的 double 双精度浮点数</strong></p> <p>64位又可分为三个部分：</p> <ul><li>符号位S：第 1 位是正负数符号位（sign），0代表正数(大于等于0)，1代表负数(小于0)</li> <li>指数位E：中间的 11 位存储指数（exponent），表示指数位</li> <li>尾数位M：最后的 52 位是尾数（mantissa），表示有效数字，大于等于1小于2</li></ul> <p><img src="data:image/png;base64,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" alt></p> <p>IEEE标准采用类似于科学计数法的方式表示浮点小数，浮点数值由如下公式表示：</p> <p><img src="data:image/png;base64,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" alt></p> <p><strong>注意，IEEE 754 对 M 和 E 有一些特殊规定</strong></p> <p>M：在计算机内部保存M时，默认这个数的第一位总是1，因此可以被舍去，只保存后面的小数部分。比如保存1.01的时候，只保存01，等到读取的时候，再把第一位的1加上去。这样做的目的，是节省1位有效数字。以64位浮点数为例，留给M只有52位，将第一位的1舍去以后，等于可以保存53位有效数字。</p> <p>E：E是一个无符号整数（unsigned int）。64位里面11位的E，它的取值范围为0~2047。但是E作为指数来说是可正可负的，所以IEEE 754规定，E的真实值需要加上偏移量才能得到最终值，8位的E是127；11位的E是1023。</p> <blockquote><p>E 为全 0 时：这时，浮点数的指数E等于1-127（或者1-1023），有效数字M不再加上第一位的1，而是还原为0.xxxxxx的小数。这样做是为了表示±0，以及接近于0的很小的数字。</p> <p>E 为全 1 时：这时，如果有效数字M全为0，表示±无穷大（正负取决于符号位s）；如果有效数字M不全为0，表示这个数不是一个数（NaN）。</p></blockquote> <h4 id="举个例子🌰"><a href="#举个例子🌰" aria-hidden="true" class="header-anchor">#</a> 举个例子🌰</h4> <p>将 -0.11 用 IEEE754 格式表示</p> <ol><li>符号S: 负数，1</li> <li>指数位E：0.11 = 1.1 * 2^-1 (二进制)，E = 1023 + (-1) = 1022 = 01111111110(二进制)</li> <li>尾数位M：0.1.....0</li></ol> <p>所以该浮点数格式为: 1 01111111110 1...000(一共52个0)</p> <p><strong>但是，IEEE754并没有解决小数无法精确表示的问题，只是提出了一种使用近似值表示小数的方式，并且引入了精度的概念。</strong></p> <p><strong>对于无限循环的二进制数，在计算机中的表示是近似数，并不是真实值。根据精度不同，近似程度也有所不同。</strong></p> <p><strong>所以用近似值运算就肯定存在精度的问题，得到只能是近似值，不是真实值。</strong></p> <h4 id="追问"><a href="#追问" aria-hidden="true" class="header-anchor">#</a> 追问</h4> <h5 id="为什么-js-采用-64-位双精度，却不能表示-int64？"><a href="#为什么-js-采用-64-位双精度，却不能表示-int64？" aria-hidden="true" class="header-anchor">#</a> 为什么 js 采用 64 位双精度，却不能表示 int64？</h5> <p>上面说过实际上M最多可用53位，当E为52时，二进制 1.52个x * 2^52 = 1x(52个x)，这也就是为什么说能安全表示(-2^53, 2^53)范围内的数</p> <blockquote><p>(-2^53, 2^53) 为什么是开区间不是闭区间？</p> <p>2^53 不安全在哪？</p> <p>Math.pow(2,53) === Math.pow(2,53) + 1  // true</p> <p>Number.MAX_SAFE_INTEGER === Math.pow(2,53) - 1 // true</p></blockquote> <p>对于整数，<a href="https://262.ecma-international.org/5.1/#sec-8.5" target="_blank" rel="noopener noreferrer">根据ECMA 262-5 标准<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，JavaScript能表示并进行精确算术运算的整数范围为：正负2的53次方，也即从最小值-9007199254740992到最大值+9007199254740992之间的范围；对于超过这个范围的整数，JavaScript依旧可以进行运算，但却不保证运算结果的精度。值得注意的是，对于整数的位运算（比如移位等操作），JavaScript仅支持32位整型数，也即从-2147483648到+2147483647之间的整数。</p> <h4 id="_0-1-不是-0-1"><a href="#_0-1-不是-0-1" aria-hidden="true" class="header-anchor">#</a> 0.1 不是 0.1</h4> <p>为什么 const  a = 0.1，打印 a 得到的是 0.1 而不是 无限小数？</p> <p>试一下 0.1.toPrecision(20) // 0.10000000000000000555</p> <p><strong>实际上我们看到的 0.1 并不是真正的 0.1。</strong></p> <p>上面说过实际上M最多可用53位，相当于二进制精度，转成十进制精度为 16 位。者由 Number.EPSILON 可知 js 的最小精度为 2.220446049250313e-16。</p> <p>例如最大正整数 2^53=9007199254740992，十进制下科学记数法为9.007199254740992e-16</p> <p>所以 js 最多能表示的十进制精度的长度是小数点后面的 16 位。所以可以使用 toPrecision(16) 来做精度运算，js自动做了这一部分处理，超过的精度会自动做凑整处理</p> <p>0.10000000000000000555.toPrecision(16) // 0.1000000000000000</p> <h4 id="tofixed-bug"><a href="#tofixed-bug" aria-hidden="true" class="header-anchor">#</a> toFixed Bug</h4> <p><strong>为什么1.005.toFixed(2) 结果为 1.00 而不是 1.01？</strong></p> <p>1.005.toPrecision(17) = 1.0049999999999999 四舍五入时后面的数实际上不足5会被全部舍去</p> <p>Math.round(1.005 * 100) / 100 = 1 也没用</p> <p>解决办法往下看 方法一 改良版 multiply</p> <h5 id="number-isinteger-bug"><a href="#number-isinteger-bug" aria-hidden="true" class="header-anchor">#</a> Number.isInteger() Bug</h5> <p><strong>为什么 Number.isInteger(1.0000000000000001) = true ？</strong></p> <p><code>1.0000000000000001</code> 转换为二进制为 <code>1.(53个0)11100</code>，超过了M的53个二进制位，导致最后的111被丢弃了，最终 <code>1.(53个0) = 1</code></p> <p><strong>为什么 Number.isInteger(5e-325) = true ？</strong></p> <p>Number.MIN_VALUE = 5e-324，表示了 js 能分辨的最小值，如果小于js能够分辨的最小值，会被自动转为 0。这时，<strong>Number.isInteger</strong> 就会误判</p> <h3 id="解决方案"><a href="#解决方案" aria-hidden="true" class="header-anchor">#</a> 解决方案</h3> <h4 id="方法一"><a href="#方法一" aria-hidden="true" class="header-anchor">#</a> 方法一</h4> <h5 id="普通版"><a href="#普通版" aria-hidden="true" class="header-anchor">#</a> 普通版</h5> <p>将浮点数转为整数，等计算完之后，再转回浮点数</p> <div class="language- extra-class"><pre class="language-text"><code>const add1 = (n1, n2) =&gt; {
+
+  const n1Precision = (n1.toString().split(&quot;.&quot;)[1] || '').length;
+
+  const n2Precision = (n2.toString().split(&quot;.&quot;)[1] || '').length;
+
+  const pow = Math.max(n1Precision, n2Precision);
+
+  const base = Math.pow(10, pow);
+
+  return (n1 * base + n2 * base) / base
+
+}
+</code></pre></div><p>缺点：</p> <ul><li>当遇到科学计数法如 2.3e+1（当数字精度大于21时，数字会强制转为科学计数法形式显示）时这个方法就不管用了</li> <li>小数乘法计算的时候也会有精度问题，比如 0.55 * 100 = 55.00000000000001，其实还是有精度缺失问题</li></ul> <h5 id="改良版"><a href="#改良版" aria-hidden="true" class="header-anchor">#</a> 改良版</h5> <div class="language- extra-class"><pre class="language-text"><code>/**
+
+ * 获取浮点数小数部分长度
+
+ * @param {number} n 
+
+ * @returns {number}
+
+ */
+
+const getPrecisionLength = n =&gt; {
+
+  const [str, strLen] = n.toString().split(/[eE]/);
+
+  const length = (str.split('.')[1] || '').length - Number(strLen || 0);
+
+  return length &gt; 0 ? length : 0;
+
+}
+
+
+
+/**
+
+ * 将参数转成指定精度
+
+ * @param {number} n 
+
+ * @param {number} p 
+
+ * @returns {number}
+
+ */
+
+const getPrecisionNumber = (n, p = 16) =&gt; Number(Number(n).toPrecision(p));
+
+
+
+/**
+
+ * 小数放大成整数
+
+ * @param {number} n 
+
+ * @returns {number}
+
+ */
+
+const float2Int = n =&gt; {
+
+  const len = getPrecisionLength(n);
+
+  const v = len &gt; 0 ? getPrecisionNumber(Number(n) * Math.pow(10, len)) : Number(n);
+
+  if (v &gt; Number.MAX_SAFE_INTEGER || v &lt; Number.MIN_SAFE_INTEGER) {
+
+    throw new Error('越界');
+
+  }
+
+  return v;
+
+}
+
+
+
+/**
+
+ * 乘
+
+ * @param {number} n1 
+
+ * @param {number} n2 
+
+ * @returns {number}
+
+ */
+
+const multiply = (n1, n2) =&gt; {
+
+  const int1 = float2Int(n1);
+
+  const int2 = float2Int(n2);
+
+  const value = int1 * int2;
+
+  if (value &gt; Number.MAX_SAFE_INTEGER || value &lt; Number.MIN_SAFE_INTEGER) {
+
+    throw new Error('越界');
+
+  }
+
+  return value / Math.pow(10, getPrecisionLength(n1) + getPrecisionLength(n2));
+
+}
+
+
+
+/**
+
+ * 加
+
+ * @param {number} n1 
+
+ * @param {number} n2 
+
+ * @returns {number}
+
+ */
+
+const plus = (n1, n2) =&gt; {
+
+  const base = Math.pow(10, Math.max(getPrecisionLength(n1), getPrecisionLength(n2)));
+
+  return (multiply(n1, base) + multiply(n2, base)) / base;
+
+}
+</code></pre></div><h4 id="方法二"><a href="#方法二" aria-hidden="true" class="header-anchor">#</a> 方法二</h4> <p>既然是为了把浮点数转成整数计算，那不如直接把浮点数转成字符串，再去掉小数点，就可以不用乘法计算就得到整数。</p> <div class="language- extra-class"><pre class="language-text"><code>const add2 = (n1, n2) =&gt; {
+
+  const n1Precision = (n1.toString().split(&quot;.&quot;)[1] || '').length;
+
+  const n2Precision = (n2.toString().split(&quot;.&quot;)[1] || '').length;
+
+  const pow = Math.max(n1Precision, n2Precision);
+
+  const base = Math.pow(10, pow)
+
+
+
+  const intN1 = Number(n1.toString().replace(&quot;.&quot;, &quot;&quot;));
+
+  const intN2 = Number(n2.toString().replace(&quot;.&quot;, &quot;&quot;));
+
+
+
+  const x = n1Precision &lt; n2Precision ? intN1 * Math.pow(10, (n2Precision - n1Precision)) : intN1;
+
+  const y = n2Precision &lt; n1Precision ? intN2 * Math.pow(10, (n1Precision - n2Precision)) : intN2;
+
+
+
+  return (x + y) / base
+
+}
+</code></pre></div><p><strong>最后：建议使用第三方库 bignumber.js，原理是把所有数字当作字符串，重新实现了计算逻辑，缺点是性能比原生的差很多。</strong></p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.fa433599.js" defer></script><script src="/assets/js/8.ebaa3a6a.js" defer></script>
+  </body>
+</html>
