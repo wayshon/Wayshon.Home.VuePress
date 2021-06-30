@@ -2,6 +2,7 @@
 
 ## 2021
 
+- `June 30, 2021` <img width="30"/> [位移枚举的使用与位掩码](/2021/位移枚举的使用与位掩码.html)
 - `June 11, 2021` <img width="30"/> [浅聊 JavaScript 浮点数](/2021/浅聊JavaScript浮点数.html)
 - `May 15, 2021` <img width="30"/>  [补码-计算机存储数据的方式](/2021/补码-计算机存储数据的方式.html)
 - `Apr 28, 2021` <img width="30"/>  [简单易懂的了解CSRF](/2021/简单易懂的了解CSRF.html)

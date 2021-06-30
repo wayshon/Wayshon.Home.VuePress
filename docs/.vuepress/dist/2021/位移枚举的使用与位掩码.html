@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>位移枚举的使用与位掩码 | Wayshon 小站</title>
+    <meta name="description" content="Wayshon Front-End Developer">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="preload" href="/assets/css/0.styles.f9ac1508.css" as="style"><link rel="preload" href="/assets/js/app.8c522d2d.js" as="script"><link rel="preload" href="/assets/js/6.b216a31d.js" as="script"><link rel="prefetch" href="/assets/js/10.a48c16b4.js"><link rel="prefetch" href="/assets/js/11.a5419096.js"><link rel="prefetch" href="/assets/js/12.0cbbfb64.js"><link rel="prefetch" href="/assets/js/13.b16df315.js"><link rel="prefetch" href="/assets/js/14.8b3ec47e.js"><link rel="prefetch" href="/assets/js/15.cabe99a1.js"><link rel="prefetch" href="/assets/js/16.a67cc252.js"><link rel="prefetch" href="/assets/js/17.ebb89b66.js"><link rel="prefetch" href="/assets/js/18.a53fbdf8.js"><link rel="prefetch" href="/assets/js/19.e80ac3d4.js"><link rel="prefetch" href="/assets/js/2.dbba3d8d.js"><link rel="prefetch" href="/assets/js/20.53051d6e.js"><link rel="prefetch" href="/assets/js/21.d29f15e7.js"><link rel="prefetch" href="/assets/js/22.0319bfb1.js"><link rel="prefetch" href="/assets/js/23.733b9128.js"><link rel="prefetch" href="/assets/js/24.6f9108aa.js"><link rel="prefetch" href="/assets/js/25.1213099a.js"><link rel="prefetch" href="/assets/js/26.274b0122.js"><link rel="prefetch" href="/assets/js/27.2639d4bf.js"><link rel="prefetch" href="/assets/js/28.b288a6e5.js"><link rel="prefetch" href="/assets/js/29.2fd2e932.js"><link rel="prefetch" href="/assets/js/3.091fb819.js"><link rel="prefetch" href="/assets/js/30.119e4149.js"><link rel="prefetch" href="/assets/js/31.432e6cb3.js"><link rel="prefetch" href="/assets/js/32.011184fe.js"><link rel="prefetch" href="/assets/js/33.00b83608.js"><link rel="prefetch" href="/assets/js/34.d802c816.js"><link rel="prefetch" href="/assets/js/35.33689142.js"><link rel="prefetch" href="/assets/js/36.e5d943d9.js"><link rel="prefetch" href="/assets/js/37.4d6aca58.js"><link rel="prefetch" href="/assets/js/38.5495d034.js"><link rel="prefetch" href="/assets/js/39.84dc2dc6.js"><link rel="prefetch" href="/assets/js/4.f95145a6.js"><link rel="prefetch" href="/assets/js/5.12543c1d.js"><link rel="prefetch" href="/assets/js/7.093a7fe1.js"><link rel="prefetch" href="/assets/js/8.e7981210.js"><link rel="prefetch" href="/assets/js/9.333127fc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f9ac1508.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wayshon 小站</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/archives.html" class="nav-link">归档</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="https://www.github.com/wayshon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">side project</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://itunes.apple.com/cn/app/id1447258000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关心宝
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qr code
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://base64.imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  base64
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://calcbit.com/garbage-web/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  垃圾分类
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/archives.html" class="nav-link">归档</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="https://www.github.com/wayshon" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">side project</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://itunes.apple.com/cn/app/id1447258000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关心宝
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  qr code
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://base64.imgqr.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  base64
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://calcbit.com/garbage-web/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  垃圾分类
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="位移枚举的使用与位掩码"><a href="#位移枚举的使用与位掩码" aria-hidden="true" class="header-anchor">#</a> 位移枚举的使用与位掩码</h1> <h2 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h2> <p>我们在 Objective-C 代码里经常会看到这样的枚举，为什么要这么写？就写个枚举而已还整上位运算了？</p> <div class="language- extra-class"><pre class="language-text"><code>typedef NS_OPTIONS(NSUInteger, UIControlState) {
+
+  UIControlStateNormal    = 0,
+
+  UIControlStateHighlighted = 1 &lt;&lt; 0,         // used when UIControl isHighlighted is set
+
+  UIControlStateDisabled   = 1 &lt;&lt; 1,
+
+  UIControlStateSelected   = 1 &lt;&lt; 2,         // flag usable by app (see below)
+
+  UIControlStateFocused API_AVAILABLE(ios(9.0)) = 1 &lt;&lt; 3, // Applicable only when the screen supports focus
+
+  UIControlStateApplication = 0x00FF0000,       // additional flags available for application use
+
+  UIControlStateReserved   = 0xFF000000        // flags reserved for internal framework use
+
+};
+</code></pre></div><h2 id="场景揣测"><a href="#场景揣测" aria-hidden="true" class="header-anchor">#</a> 场景揣测</h2> <ul><li><p>有1个 button</p></li> <li><p>有一个事件枚举UIControlEvents，包含多个手势类型</p></li> <li><p>有两个事件处理函数 touchUp 和 touchDown</p></li> <li><p>给 button 添加事件处理函数，要求：</p> <ul><li>监听 UIControlEventTouchUpInside 绑定 touchUp 方法</li> <li>监听 UIControlEventTouchDown 绑定 touchDown 方法</li></ul></li></ul> <h3 id="首先想到的方法"><a href="#首先想到的方法" aria-hidden="true" class="header-anchor">#</a> 首先想到的方法</h3> <p>注册两个事件呗</p> <div class="language- extra-class"><pre class="language-text"><code>[btn addTarget:self action: @selector(touchUp) forControlEvents:UIControlEventTouchUpInside];
+
+[btn addTarget:self action: @selector(touchDown) forControlEvents:UIControlEventTouchDown];
+</code></pre></div><h3 id="apple-官方做法"><a href="#apple-官方做法" aria-hidden="true" class="header-anchor">#</a> Apple 官方做法</h3> <div class="language- extra-class"><pre class="language-text"><code>[btn addTarget:self action: @selector(touchUp) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchDown];
+</code></pre></div><p><img src="/assets/img/excuse_me.56587c02.png" alt="excuse_me.png"></p> <p><strong>为什么只用一行代码能注册两个事件？forControlEvents 明明只接收一个参数啊？</strong></p> <p><strong>后面的或运算什么鬼？</strong></p> <p>点进去看看 UIControlEvents 其实是个枚举</p> <div class="language- extra-class"><pre class="language-text"><code>typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
+
+  UIControlEventTouchDown                     = 1 &lt;&lt; 0,   // on all touch downs
+
+  UIControlEventTouchDownRepeat                  = 1 &lt;&lt; 1,   // on multiple touchdowns (tap count &gt; 1)
+
+  UIControlEventTouchDragInside                  = 1 &lt;&lt; 2,
+
+  UIControlEventTouchDragOutside                 = 1 &lt;&lt; 3,
+
+  UIControlEventTouchDragEnter                  = 1 &lt;&lt; 4,
+
+  UIControlEventTouchDragExit                   = 1 &lt;&lt; 5,
+
+  UIControlEventTouchUpInside                   = 1 &lt;&lt; 6,
+
+  UIControlEventTouchUpOutside                  = 1 &lt;&lt; 7,
+
+  UIControlEventTouchCancel                    = 1 &lt;&lt; 8,
+
+
+
+  UIControlEventValueChanged                   = 1 &lt;&lt; 12,   // sliders, etc.
+
+  UIControlEventPrimaryActionTriggered API_AVAILABLE(ios(9.0)) = 1 &lt;&lt; 13,   // semantic action: for buttons, etc.
+
+
+
+  UIControlEventEditingDidBegin                  = 1 &lt;&lt; 16,   // UITextField
+
+  UIControlEventEditingChanged                  = 1 &lt;&lt; 17,
+
+  UIControlEventEditingDidEnd                   = 1 &lt;&lt; 18,
+
+  UIControlEventEditingDidEndOnExit                = 1 &lt;&lt; 19,   // 'return key' ending editing
+
+
+
+  UIControlEventAllTouchEvents                  = 0x00000FFF, // for touch events
+
+  UIControlEventAllEditingEvents                 = 0x000F0000, // for UITextField
+
+  UIControlEventApplicationReserved                = 0x0F000000, // range available for application use
+
+  UIControlEventSystemReserved                  = 0xF0000000, // range reserved for internal framework use
+
+  UIControlEventAllEvents                     = 0xFFFFFFFF
+
+};
+</code></pre></div><p>woc，这个枚举不简单，竟然还有位运算。</p> <p>常规理解，枚举就是一堆常量，是固定的死值，它再是位运算，他也是死值，就算 1 &lt;&lt; 2 = 4，这个 4 也是固定的。</p> <p>回看上面给 button 添加事件的时候用到的 UIControlEvents 枚举，那里的或运算与枚举里的位运算肯定有某种关系</p> <p>UIControlEventTouchUpInside(1 &lt;&lt; 6) | UIControlEventTouchDown(1 &lt;&lt; 0) 结果为：</p> <p>1000000</p> <p>0000001</p> <hr> <p>1000001</p> <p>所以UIControlEvents最终接收到的值是 1000001</p> <p><strong>Q：那么怎么判定 1000001 既等于 1000000 有等于 1 成立呢？</strong></p> <p><strong>A：不用 = 号，而使用与运算 &amp;</strong></p> <div class="language- extra-class"><pre class="language-text"><code>- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
+
+    if (controlEvents &amp; UIControlEventTouchUpInside) {
+
+        // TouchUp 逻辑
+
+    }
+
+    if (controlEvents &amp; UIControlEventTouchDown) {
+
+        // TouchDown 逻辑
+
+    }
+
+    ...
+
+}
+</code></pre></div><p>由于 1000001 是由 1000000 和 1 进行或运算得到的，所以</p> <p>1000001 &amp; 1000000 = 1 (true)</p> <p>1 &amp; 1000000 = 1000000 (true)</p> <p>即上面两个 if 判断成立，能够注册UIControlEventTouchUpInside和UIControlEventTouchDown事件</p> <p><strong>什么？瞎传一个大值不就能与小指与运算成功了？</strong></p> <ol><li>瞎传枚举编译过不去，必须是指定枚举值</li> <li>枚举值内都是向左位移运算的，全是 1 后面跟着数个0，不存在 11111 这种万能值（除非自己定义一个用来匹配所有值的万能值，如 UIControlEventAllEvents）</li></ol> <h3 id="奇怪的知识-位掩码"><a href="#奇怪的知识-位掩码" aria-hidden="true" class="header-anchor">#</a> 奇怪的知识 - 位掩码</h3> <blockquote><p>什么是”位掩码“。
+位掩码（BitMask），是”位（Bit）“和”掩码（Mask）“的组合词。”位“指代着二进制数据当中的二进制位，而”掩码“指的是一串用于与目标数据进行按位操作的二进制数字。组合起来，就是”用一串二进制数字（掩码）去操作另一串二进制数字“的意思。</p></blockquote> <p><img src="/assets/img/qiguai.7f29f9cd.png" alt></p> <p>重新设计上面点击事件的栗子，定义一个关于权限的枚举</p> <div class="language- extra-class"><pre class="language-text"><code>typedef enum {
+
+  roleA = 1 &lt;&lt; 0, // 1（十进制 1）
+
+  roleB = 1 &lt;&lt; 1, // 10（十进制 2）
+
+  roleC = 1 &lt;&lt; 2, // 100（十进制 4）
+
+}AuthType;
+</code></pre></div><h4 id="常规方法"><a href="#常规方法" aria-hidden="true" class="header-anchor">#</a> 常规方法</h4> <p>给彦祖分配两个角色 roleA 和 roleC</p> <div class="language- extra-class"><pre class="language-text"><code>NSMutableArray *auths = [NSMutableArray new];
+
+[auths addObject:@(roleA)];
+
+[auths addObject:@(roleC)];
+</code></pre></div><p>判断彦祖有哪些角色，并做相关操作</p> <div class="language- extra-class"><pre class="language-text"><code>[auths enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+
+    if ([obj isEqual: @(roleA)]) {
+
+      NSLog(@&quot;给彦祖一个面具&quot;);
+
+    }
+
+    if ([obj isEqual: @(roleB)]) {
+
+      NSLog(@&quot;给彦祖一把枪&quot;);
+
+    }
+
+    if ([obj isEqual: @(roleC)]) {
+
+      NSLog(@&quot;给彦祖一个成龙&quot;);
+
+    }
+
+ }];
+</code></pre></div><h4 id="位掩码方法"><a href="#位掩码方法" aria-hidden="true" class="header-anchor">#</a> 位掩码方法</h4> <p>给彦祖分配两个角色 roleA 和 roleB</p> <p>通过或运算赋予值</p> <div class="language- extra-class"><pre class="language-text"><code>NSInteger auth = roleA | roleC;
+</code></pre></div><p>判断彦祖有哪些角色，并做相关操作。</p> <p>这里彦祖权限为 auth，位掩码为各个枚举值，通过与运算值判断是否为 true</p> <div class="language- extra-class"><pre class="language-text"><code>if (auth &amp; roleA) {
+
+    NSLog(@&quot;给彦祖一个面具&quot;);
+
+}
+
+if (auth &amp; roleB) {
+
+    NSLog(@&quot;给彦祖一把枪&quot;);
+
+}
+
+if (auth &amp; roleC) {
+
+    NSLog(@&quot;给彦祖一个成龙&quot;);
+
+}
+</code></pre></div><p>对比一下优势明显，一个整型代替数组，同时避免了数组遍历。</p> <p><strong>或运算：因为位掩码都是 1 后面跟若干个 0，进行或运算相当于把有 1 的位数都拼凑到一起，有 1 的即拥有对应位的权限。</strong></p> <p><strong>与运算：位掩码的位置有 1 且对应计算的值位置也是 1 结果才是 1，有再多的 1 如果与位掩码对应不上，结果只能是 0，boolean 为 false</strong></p> <h2 id="javascript-搞个例子🌰"><a href="#javascript-搞个例子🌰" aria-hidden="true" class="header-anchor">#</a> JavaScript 搞个例子<strong>🌰</strong></h2> <h3 id="要求"><a href="#要求" aria-hidden="true" class="header-anchor">#</a> 要求</h3> <ul><li><p>有3个 button：btn1、btn2、btn3</p></li> <li><p>有一个事件枚举: touchDown(鼠标按下)、touchUp(鼠标抬起)、doublieTouch(双击)</p></li> <li><p>有3个埋点函数，分别负责：touchDownLog(鼠标按下)、touchUpLog(鼠标抬起)、doublieTouchLog(双击)</p></li> <li><p>给 button 添加埋点，要求：</p> <ul><li>btn1 监听 touchDown 与 touchUp</li> <li>btn2 监听 touchDown 与 doublieTouch</li> <li>btn3 监听 touchDown 与 touchUp 与 doublieTouch</li></ul></li></ul> <h3 id="常规做法"><a href="#常规做法" aria-hidden="true" class="header-anchor">#</a> 常规做法</h3> <div class="language- extra-class"><pre class="language-text"><code>const touchDown = 'touchDown';
+
+const touchUp = 'touchUp';
+
+const doublieTouch = 'doublieTouch';
+
+
+
+function addEventListener(ele, eventTypes) {
+
+    eventTypes.forEach(eventType =&gt; {
+
+        ele.addEventListener(eventType, () =&gt; {
+
+            if (eventType === touchDown) {
+
+                ele.addEventListener('mousedown', log(touchDown));
+
+            }
+
+            if (eventType === touchUp) {
+
+                ele.addEventListener('mouseup', log(touchUp));
+
+            }
+
+            if (eventType === doublieTouch) {
+
+                ele.addEventListener('dblclick', log(doublieTouch));
+
+            }
+
+        });
+
+    });
+
+}
+
+
+
+addEventListener(btn1, [touchDown, touchUp]);
+
+addEventListener(btn2, [touchDown, doublieTouch]);
+
+addEventListener(btn3, [touchDown, touchUp, doublieTouch]);
+</code></pre></div><h3 id="位移枚举做法"><a href="#位移枚举做法" aria-hidden="true" class="header-anchor">#</a> 位移枚举做法</h3> <div class="language- extra-class"><pre class="language-text"><code>const touchDown = 1 &lt;&lt; 0;
+
+const touchUp = 1 &lt;&lt; 1;
+
+const doublieTouch = 1 &lt;&lt; 2;
+
+
+
+function addEventListener(ele, eventType) {
+
+    if (eventType &amp; touchDown) {
+
+        ele.addEventListener('mousedown', log(touchDown));
+
+    }
+
+    if (eventType &amp; touchUp) {
+
+        ele.addEventListener('mouseup', log(touchUp));
+
+    }
+
+    if (eventType &amp; doublieTouch) {
+
+        ele.addEventListener('dblclick', log(doublieTouch));
+
+    }
+
+}
+
+
+
+addEventListener(btn1, touchDown | touchUp);
+
+addEventListener(btn2, touchDown | doublieTouch);
+
+addEventListener(btn2, touchDown | touchUp | doublieTouch);
+</code></pre></div><p>同样的几行判断，少了一层数组和对数组的遍历</p> <p><img src="/assets/img/beautiful.723b129d.png" alt></p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.8c522d2d.js" defer></script><script src="/assets/js/6.b216a31d.js" defer></script>
+  </body>
+</html>

@@ -1,5 +1,16 @@
 # Wayshon 专注前端领域开发
 
+### 位移枚举的使用与位掩码
+
+`June 30, 2021`
+
+Objective-C UIControlEvents <br />
+位运算 <br />
+位掩码
+
+[...阅读全文](/2021/位移枚举的使用与位掩码.html)
+___
+
 ### 浅聊 JavaScript 浮点数
 
 `June 11, 2021`
