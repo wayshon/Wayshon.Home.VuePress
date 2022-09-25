@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/wayshon/Wayshon.Home.VuePress#readme",
   "devDependencies": {
-    "vuepress": "^0.14.10"
+    "vuepress": "^1.9.7"
   }
 }
