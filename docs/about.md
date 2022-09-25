@@ -3,7 +3,7 @@
  - 王旭 / 男 / 1993
  - 无锡太湖学院 / 计算机科学与技术
  - Github: https://github.com/wayshon 
- - Blog: https://wayshon.com
+ - Blog: https://calcbit.com
  - 手机: 15716199911
  - Email: wayshon@qq.com
 

@@ -20,148 +20,148 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
  */
 self.__precacheManifest = [
   {
-    "url": "2016/CodePush使用调研.html",
-    "revision": "a9fe6c8f00e0ce7fba3e30736f937d23"
-  },
-  {
-    "url": "2016/Cordova搭配Vue开发混合app实践.html",
-    "revision": "c472570135e8290e316392e824a1dbe3"
-  },
-  {
-    "url": "2016/ES6学习笔记.html",
-    "revision": "5fb63599e524e2ced09ece3f9ce50b90"
-  },
-  {
-    "url": "2016/iOS-sqlite3外键级联删除问题解决.html",
-    "revision": "3b077340d0594a12b4f38b4ed6fdde69"
-  },
-  {
-    "url": "2016/iOS自带的宏.html",
-    "revision": "cf05d03f8143cea882906ac32812595e"
-  },
-  {
-    "url": "2016/iOS获取当前屏幕的视图控制器.html",
-    "revision": "6eebe5f0f7f1a5b063ff84f09a900ae0"
-  },
-  {
     "url": "2016/使用FMDB事务批量存入数据.html",
-    "revision": "d7ece60f03eefd32c8201343e154038e"
+    "revision": "930999d8eaf94b5b027f72a936acaef7"
   },
   {
     "url": "2016/栈,堆,全局区,常量区,代码区的区别.html",
-    "revision": "695acd6eb1cac1eb1dcd5fd7b6248c65"
+    "revision": "97344272758cb8199143043f4c67bf17"
   },
   {
-    "url": "2017/git使用笔记.html",
-    "revision": "54f85a11c88e974ce694b2f91a202d60"
+    "url": "2016/CodePush使用调研.html",
+    "revision": "3ce5924bdea6ad3103dcfc9d72bb9266"
   },
   {
-    "url": "2017/js_addEventListener&removeEventListener.html",
-    "revision": "18ea5d6d42297abc7c8d90f1d906b152"
+    "url": "2016/Cordova搭配Vue开发混合app实践.html",
+    "revision": "d3ab8898bb0acbdd4ad05617aca8ad15"
   },
   {
-    "url": "2017/js_event-loop.html",
-    "revision": "badbdf3c51cf33867a6de18daf0c985b"
+    "url": "2016/ES6学习笔记.html",
+    "revision": "74d74f1ddc989b7d66cb0e94a0dea80e"
   },
   {
-    "url": "2017/再学vue.html",
-    "revision": "b0d8848caa8c5aa347c46ac906a9d2e9"
+    "url": "2016/iOS-sqlite3外键级联删除问题解决.html",
+    "revision": "a1ea4b069786591c120d0c1225982d25"
   },
   {
-    "url": "2017/判断浏览器终端.html",
-    "revision": "00212724827c413b44a3e16dc471ab2e"
+    "url": "2016/iOS获取当前屏幕的视图控制器.html",
+    "revision": "d56b77c1966ea7efb988951018dbbf1d"
   },
   {
-    "url": "2017/正则小记.html",
-    "revision": "c6ad426f9220e50f7b504830f436370b"
-  },
-  {
-    "url": "2017/浏览器渲染流程.html",
-    "revision": "03f40c41dec24b2bcbb398633fa721fd"
+    "url": "2016/iOS自带的宏.html",
+    "revision": "1f18c00b0ba6e422c2b10a7794bfdbd0"
   },
   {
     "url": "2017/蝴蝶书学习笔记.html",
-    "revision": "cb81dad3c6a45f286e66bfd836ccf24f"
+    "revision": "52691b7e08f9c1c942586cccc8a485e8"
   },
   {
-    "url": "2018/JavaScript常见排序.html",
-    "revision": "8c52a55c80db6242e89b434bb4915e71"
+    "url": "2017/浏览器渲染流程.html",
+    "revision": "aceb6fbd7fce63a4e05d63e0abeb8e93"
   },
   {
-    "url": "2018/Review_JavaScript.html",
-    "revision": "cd10951cead359e126d6b9ab32653563"
+    "url": "2017/判断浏览器终端.html",
+    "revision": "31aefe81cb3753dc042d5c0e6f987e93"
   },
   {
-    "url": "2018/virtual-dom-learning.html",
-    "revision": "ea6c0c84b5cd737739fe97d52398c9f1"
+    "url": "2017/再学vue.html",
+    "revision": "0109ee6c197ac9de7b6d8e85fdc837e4"
   },
   {
-    "url": "2018/样式小记.html",
-    "revision": "cce12f9436f75d4330bbbb21e0188814"
+    "url": "2017/正则小记.html",
+    "revision": "8f576cda08c2e60c1108216601fac92c"
+  },
+  {
+    "url": "2017/git使用笔记.html",
+    "revision": "7da84eb4db8d01eddbdd82dd9c417c66"
+  },
+  {
+    "url": "2017/js_addEventListener&removeEventListener.html",
+    "revision": "76e8135ed4eff918287d6ed8bcade2c4"
+  },
+  {
+    "url": "2017/js_event-loop.html",
+    "revision": "0a52a82c5f4b070cd10338a4fa42bcf1"
   },
   {
     "url": "2018/网络请求相关.html",
-    "revision": "39b597f67ef77cc66c61787f82c68b64"
+    "revision": "0db0453fc0fe7e5f7ecb330de25c4444"
   },
   {
-    "url": "2019/ios-app内页面添加到桌面.html",
-    "revision": "2e9bdd73fb760441496e6c9567761189"
+    "url": "2018/样式小记.html",
+    "revision": "f84e4b85d1ef51199a8fbffc2b09726e"
   },
   {
-    "url": "2019/ReactNative是怎么在iOS上跑起来的.html",
-    "revision": "33476b623eb9131c81ceed1509b48e1a"
+    "url": "2018/JavaScript常见排序.html",
+    "revision": "9a5d23a61a1bf1c162c049faf02e220e"
   },
   {
-    "url": "2019/前端页面优化常见方法.html",
-    "revision": "76b54017df9beee770634c18f09b478f"
+    "url": "2018/Review_JavaScript.html",
+    "revision": "d35bf7a20201f839b5b1f9350ab87c7c"
+  },
+  {
+    "url": "2018/virtual-dom-learning.html",
+    "revision": "f20e9962e97671c3dadfb6d040b6e023"
   },
   {
     "url": "2019/面试-扑克牌问题.html",
-    "revision": "8d5e56273412a688fc716dd10168990d"
+    "revision": "a4b706c185cb5cd4eadddb46495a7030"
   },
   {
-    "url": "2020/flutter模仿网易云音乐.html",
-    "revision": "c91794640abb73a146e12d7b2043e2f9"
+    "url": "2019/前端页面优化常见方法.html",
+    "revision": "b228d51c10e6f12eea36e8620c901bd4"
   },
   {
-    "url": "2020/基于Flutter的HybridWebview容器实践.html",
-    "revision": "399dae9e6be23940e256533cda51a4d4"
+    "url": "2019/ios-app内页面添加到桌面.html",
+    "revision": "8d5a78de84f83d9cb786fbacd81ea637"
+  },
+  {
+    "url": "2019/ReactNative是怎么在iOS上跑起来的.html",
+    "revision": "e76416bcaf330e1cb90bc5e437f67be3"
   },
   {
     "url": "2020/常见的跨端方案.html",
-    "revision": "4dcbcdcacb69f3b76099c3ad7b636853"
+    "revision": "911a536311ee636419f9588d38b58830"
+  },
+  {
+    "url": "2020/基于Flutter的HybridWebview容器实践.html",
+    "revision": "dc12624d3d9bd0206a9efec79839ac64"
   },
   {
     "url": "2020/怎么开发一个flutter-ios插件.html",
-    "revision": "3c93c049a91cc6e74b1e17d0acd322c2"
+    "revision": "150d80c17c37cdc74b6ecbed5a94f627"
   },
   {
-    "url": "2021/位移枚举的使用与位掩码.html",
-    "revision": "0d29a9318de3ca18bb978eaeed5d7e8f"
-  },
-  {
-    "url": "2021/浅聊JavaScript浮点数.html",
-    "revision": "6643d20e559a387f92c6c55c6b2289a6"
-  },
-  {
-    "url": "2021/简单易懂的了解CSRF.html",
-    "revision": "01c1fba5096c1d34486e43c5931dd37c"
+    "url": "2020/flutter模仿网易云音乐.html",
+    "revision": "837cd83f0ceca68f45a7186a72668174"
   },
   {
     "url": "2021/补码-计算机存储数据的方式.html",
-    "revision": "ec79f2875db0666d9f69f98e6f3bfaed"
+    "revision": "4ce86cc543ed34a60d79363dffc10dbc"
+  },
+  {
+    "url": "2021/简单易懂的了解CSRF.html",
+    "revision": "6e546d4b9d230a374061d10c6301ef94"
+  },
+  {
+    "url": "2021/浅聊JavaScript浮点数.html",
+    "revision": "1ab4cff390cc09e02856d89b2613d951"
+  },
+  {
+    "url": "2021/位移枚举的使用与位掩码.html",
+    "revision": "3bc3c58ea9c9aa29be792b12db582020"
   },
   {
     "url": "404.html",
-    "revision": "c49b6b6363e948b25882869cfba6513e"
+    "revision": "73d4222f3c58d256ba91484394c568a6"
   },
   {
     "url": "about.html",
-    "revision": "5700d49e6d028e53e6eb487e5b8b7a24"
+    "revision": "d13fb8884db11ceaaba7f6abc59bde00"
   },
   {
     "url": "archives.html",
-    "revision": "8785db20e2a291bc6fc35ed633fab6da"
+    "revision": "4724875ab7d322ae46e1d5c5a4bdeea8"
   },
   {
     "url": "assets/css/0.styles.f9ac1508.css",
@@ -480,8 +480,8 @@ self.__precacheManifest = [
     "revision": "e6d0669eec705c09fb4086d497f1ae11"
   },
   {
-    "url": "assets/js/37.4d6aca58.js",
-    "revision": "5599e7c6ce3e1b56346062ffbab76370"
+    "url": "assets/js/37.855e33d8.js",
+    "revision": "a7d1f0c392744496d2f2c158e6d82f4b"
   },
   {
     "url": "assets/js/38.5495d034.js",
@@ -516,12 +516,12 @@ self.__precacheManifest = [
     "revision": "121621881f6f6bfd2f37a931b9542845"
   },
   {
-    "url": "assets/js/app.6cd6cd7e.js",
-    "revision": "8a881177ed9ffe0826afbf463c6063f4"
+    "url": "assets/js/app.3234abbf.js",
+    "revision": "af167acec88842b2b4fec66886a9b5aa"
   },
   {
     "url": "index.html",
-    "revision": "0007d266e58c3707e60b8f1a21758ee2"
+    "revision": "66a4c5d8c09685553c374e2afc4bf6a5"
   },
   {
     "url": "me.png",
